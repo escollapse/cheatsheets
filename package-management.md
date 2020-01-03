@@ -76,7 +76,7 @@
  **do not install
  * yumdownloader --source --urls
  **yum install --resolve --destdir
- * \[check-\]update \[*\] // upgrade \[*\]
+ * \[check-\]update \[*\] // upgrade \[\*\]
  * list \[package\]
  **search repositories
  * search \*string\*
