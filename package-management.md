@@ -1,10 +1,10 @@
 # Deb Flavors
 ## dpkg - local packages
- * --install // -i *.deb
- * --remove // -r *.deb
- * --purge // -P *.deb
+ * --install // -i \*.deb
+ * --remove // -r \*.deb
+ * --purge // -P \*.deb
  **also remove config files
- * --force-depends *.deb
+ * --force-depends \*.deb
  * --info
  * --status // -s
  **abbreviated form of info
@@ -14,24 +14,24 @@
  **(files from installed packages)
  * --search // -S
  **(installed packages)
- * dpkg-reconfigure *.Deb
+ * dpkg-reconfigure \*.deb
 ## apt-* - remote packages (managed w/dpkg)
 * apt-get install <package-name>
 * apt-get update
 **update info at repositories
 * apt-get --only-upgrade
 **upgrade only if installed
-* apt-get [dist-]upgrade
-**upgrade **all**
+* apt-get \[dist-\]upgrade
+**upgrade \*all\*
 * apt-get remove
 **same as above
 * apt-get purge
 **same as above
-* apt-cache search *
+* apt-cache search \*
 **package existent in repositories?
-* apt-cache show *
+* apt-cache show \*
 **package information
-* apt-cache showpkg *
+* apt-cache showpkg \*
 **technical information
 ### config
  * repositories: /etc/apt/sources.list
@@ -51,7 +51,7 @@
  **truly forced
  * --rebuilddb
  **see below
- * --checksig // -K *.rpm
+ * --checksig // -K \*.rpm
  * --import \*site\*
  **get gpg key
  * --verify // -Va
@@ -59,8 +59,8 @@
  * --upgrade // -U
  * --freshen // -F
  * --erase // -e pkg[.rpm]
- **[--allmatches] [--nodeps]
- * -q[i][l][p] [--changelog]
+ **\[--allmatches\] \[--nodeps\]
+ * -q\[i\]\[l\]\[p\] \[--changelog\]
  ****q**uery **i**nfo **l**istItsFiles **p**ackageOnDisk
  **show revision history, not database
  * -qc
@@ -70,14 +70,14 @@
  * -qf
  ****q**uery package owning **f**ile
 ## yum
- * [-y] install
- **[skip confirmation]
+ * \[-y\] install
+ **\[skip confirmation\]
  * install --download only
  **do not install
  * yumdownloader --source --urls
  **yum install --resolve --destdir
- * [check-]update [*] // upgrade [*]
- * list [package]
+ * \[check-\]update \[*\] // upgrade \[*\]
+ * list \[package\]
  **search repositories
  * search \*string\*
  **in package info
